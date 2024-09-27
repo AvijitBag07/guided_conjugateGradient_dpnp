@@ -7,9 +7,8 @@ import numpy as np
 
 
 def fit_cpu(A, b, tol, max_iter):
-    # Note that this function works even tensors 'A' and 'b' are NumPy or CuPy
+    # Note that this function works even tensors 'A' and 'b' are NumPy or DPNP
     # arrays.
-    #xp = cupy.get_array_module(A)
     x = np.zeros_like(b, dtype=np.float64)
     r0 = b - np.dot(A, x)
     p = r0
