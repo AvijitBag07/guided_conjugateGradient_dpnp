@@ -7,7 +7,7 @@ import numpy as np
 
 
 def fit_cpu(A, b, tol, max_iter):
-    # Note that this function works even tensors 'A' and 'b' are NumPy or DPNP
+    # Note that this function works even tensors 'A' and 'b' are NumPy or dpnp
     # arrays.
     x = np.zeros_like(b, dtype=np.float64)
     r0 = b - np.dot(A, x)
@@ -25,7 +25,7 @@ def fit_cpu(A, b, tol, max_iter):
     return x
 
 def fit(A, b, tol, max_iter):
-    # Note that this function works even tensors 'A' and 'b' are NumPy or CuPy
+    # Note that this function works even tensors 'A' and 'b' are NumPy or dpnp
     # arrays.
     x = dpnp.zeros_like(b, dtype=dpnp.float64)
     r0 = b - dpnp.dot(A, x)
@@ -57,10 +57,8 @@ def run(gpu_id, tol, max_iter):
         print('Trial: %d' % repeat)
         # Create the large symmetric matrix 'A'.
         N = 10000
-        #A = np.random.randint(-50, 50, size=(N, N))
         A = np.random.random((N,N))
         A = (A @ A.T).astype(np.float64)
-        #x_ans = np.random.randint(-50, 50, size=N).astype(np.float64)
         x_ans = np.random.random((N)).astype(np.float64)
         b = np.dot(A, x_ans)
 
