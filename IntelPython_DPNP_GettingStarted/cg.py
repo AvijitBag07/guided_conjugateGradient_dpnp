@@ -72,15 +72,9 @@ def run(gpu_id, tol, max_iter):
         end = time.time()
         print('%s:  %f sec' % ("CPU", end - start))
 
-        #device = select_gpu_device()
-        #a_dpt = dpnp.asarray(A, dtype=dpnp.float64)
-        #b_dpt = dpnp.asarray(b, dtype=dpnp.float64)
-
         a_dpt = dpnp.asarray(A, dtype=dpnp.float64)
         b_dpt = dpnp.asarray(b, dtype=dpnp.float64)
-        #print(a_dpt.device)
-        #print(b_dpt.device)
-        #ans = dpnp.asarray(x_ans)
+
         print('Running GPU...')
         start = time.time()
         x_gpu = fit(a_dpt, b_dpt, tol, max_iter)
@@ -98,7 +92,7 @@ if __name__ == '__main__':
                         help='ID of GPU.')
     parser.add_argument('--tol', '-t', default=0.1, type=float,
                         help='tolerance to stop iteration')
-    parser.add_argument('--max-iter', '-m', default=8000, type=int,
+    parser.add_argument('--max-iter', '-m', default=5000, type=int,
                         help='number of iterations')
     args = parser.parse_args()
     run(args.gpu_id, args.tol, args.max_iter)
