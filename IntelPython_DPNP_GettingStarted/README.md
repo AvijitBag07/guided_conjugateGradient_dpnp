@@ -11,7 +11,9 @@ The `Intel® Python DPNP Getting Started` sample code shows how to find conjugat
 
 
 ## Purpose
-The Data Parallel Extension for NumPy* (dpnp package) - a library that implements a subset of NumPy* that can be executed on any data parallel device. The subset is a drop-in replacement of core NumPy* functions and numerical data types.
+The Data Parallel Extension for NumPy* (dpnp package) - a library that implements a subset of NumPy* that can be executed on any data parallel device. The subset is a drop-in replacement of core NumPy* functions and numerical data types. 
+
+The DPNP is used to offload python code to INTEL GPU's. This is very similar to CUPY API [Comparsion_list](https://intelpython.github.io/dpnp/reference/comparison.html#).   
 
 
 ## Prerequisites
@@ -19,24 +21,22 @@ The Data Parallel Extension for NumPy* (dpnp package) - a library that implement
 | Optimized for           | Description
 | :---                    | :---
 | OS                      | Ubuntu* 22.04 (or newer)
-| Hardware                | Intel Atom® processors <br> Intel® Core™ processor family <br> Intel® Xeon® processor family <br> Intel® Xeon® Scalable processor family
-| Software                | Intel® oneAPI Data Analytics Library (oneDAL)
-> **Note**: AI and Analytics samples are validated on AI Tools Offline Installer. For the full list of validated platforms refer to [Platform Validation](https://github.com/oneapi-src/oneAPI-samples/tree/master?tab=readme-ov-file#platform-validation).
+| Hardware                | Intel® Gen9 <br>Intel® Gen11 <br>Intel® Data Center GPU Max 
+| Software                | Intel® Python Data Parallel Extension for NumPy (DPNP)
+> **Note**: [Intel® Python DPNP - Data Parallel Extension for NumPy](https://github.com/IntelPython/dpnp).
 
 ## Key Implementation Details
 
-- This get started sample code is implemented for CPUs using the Python language. The example assumes you have daal4py and scikit-learn installed inside a conda environment, similar to what is delivered with the installation of the Intel® Distribution for Python*.
-
-- The Intel® oneAPI Data Analytics Library (oneDAL) is ready for use once you finish the AI Tools installation and have run the post installation script.
-
+- This get-started sample code is implemented for Intel GPUs using Python language. The example assumes the user has the latest DPNP installed in the environment, similar to what is delivered with the installation of the [Intel® Distribution for Python*](https://www.intel.com/content/www/us/en/developer/tools/oneapi/distribution-python-download.html).
+  
 ## Environment Setup
 
 You will need to download and install the following toolkits, tools, and components to use the sample.
 
-**1. Get AI Tools**
+**1. Intel Python**
 
 
-Required AI Tools: daal4py (Select Intel® Extension for Scikit-learn* on [AI Tools Selector](https://www.intel.com/content/www/us/en/developer/tools/oneapi/ai-tools-selector.html) to install)
+Required Intel Python package: DPNP (Select Intel® Distribution for Python*: Offline on [Get Intel® Distribution for Python*](https://www.intel.com/content/www/us/en/developer/tools/oneapi/distribution-python-download.html) to install)
 
 
 If you have not already, select and install these Tools via [AI Tools Selector](https://www.intel.com/content/www/us/en/developer/tools/oneapi/ai-tools-selector.html). AI and Analytics samples are validated on AI Tools Offline Installer. It is recommended to select Offline Installer option in AI Tools Selector.
