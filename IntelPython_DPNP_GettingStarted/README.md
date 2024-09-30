@@ -1,25 +1,24 @@
 # Intel® Python Data Parallel Extension for NumPy Getting Started Sample
 
-The `Intel® Python DPNP Getting Started` sample code shows how to find conjugate Gradient using the Intel Python API powered by the [Intel® Python DPNP - Data Parallel Extension for NumPy](https://github.com/IntelPython/dpnp).
+The `Intel® Python DPNP Getting Started` sample code shows how to find conjugate gradient using the Intel Python API powered by the [Intel® Python DPNP - Data Parallel Extension for NumPy](https://github.com/IntelPython/dpnp).
 
 | Area                   | Description
 | :---                   | :---
 | Category               | Getting Started
-| What you will learn    | Basic daal4py programming model for Intel CPUs
-| Time to complete       | 5 minutes
+| What you will learn    | DPNP programming model for Intel GPU
+| Time to complete       | 60 minutes
+>**Note**: This sample is migrated from Cupy Python sample. See the [ConjugateGradient](https://github.com/cupy/cupy/blob/main/examples/cg/cg.py) sample in the cupy-samples GitHub.
 
 
 ## Purpose
+The Data Parallel Extension for NumPy* (dpnp package) - a library that implements a subset of NumPy* that can be executed on any data parallel device. The subset is a drop-in replacement of core NumPy* functions and numerical data types.
 
-daal4py is a simplified API to oneDAL that allows for fast usage of the framework suited for data scientists or machine learning users. Built to help provide an abstraction to Intel® oneDAL for direct usage or integration into one's own framework.
-
-In this sample, you will run a batch Linear Regression model with oneDAL daal4py library memory objects. You will also learn how to train a model and save the information to a file.
 
 ## Prerequisites
 
 | Optimized for           | Description
 | :---                    | :---
-| OS                      | Ubuntu* 20.04 (or newer)
+| OS                      | Ubuntu* 22.04 (or newer)
 | Hardware                | Intel Atom® processors <br> Intel® Core™ processor family <br> Intel® Xeon® processor family <br> Intel® Xeon® Scalable processor family
 | Software                | Intel® oneAPI Data Analytics Library (oneDAL)
 > **Note**: AI and Analytics samples are validated on AI Tools Offline Installer. For the full list of validated platforms refer to [Platform Validation](https://github.com/oneapi-src/oneAPI-samples/tree/master?tab=readme-ov-file#platform-validation).
