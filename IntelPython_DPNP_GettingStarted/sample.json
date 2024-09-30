@@ -1,24 +1,22 @@
 {
-  "guid": "20ED32F3-671E-4710-A857-2821DB56CC22",
-  "name": "Intel® Python NumPy vs Numba_dpex",
+  "guid": "B8E1196A-83B1-4972-8D87-E15F14CAFC82",
+  "name": "Intel® Python Data Parallel Extension for NumPy",
   "categories": ["Toolkit/oneAPI DirectProgramming/Python/DPNP_GettingStarted"],
-  "description": "This sample shows how to achieve the same accuracy of the k-NN model classification while using numpy, numba and numba_dpex.",
+  "description": "This sample code shows how to find conjugate gradient using the Intel Python API powered by the dpnp",
   "builder": ["cli"],
   "languages": [{"python":{}}],
   "dependencies": ["intelpython"],
   "os":["linux"],
-  "targetDevice": ["CPU"],
+  "targetDevice": ["GPU","CPU"],
   "ciTests": {
   	"linux": [
     {
   		"env": [
-        "source /intel/oneapi/intelpython/bin/activate",
-        "conda activate base", 
-        "pip install pandas"
+        "source /intel/oneapi/intelpython/env/activate"
       ],
-  		"id": "idp_numpy_numba_dpex_gs_py",
+  		"id": "idp_intel_dpnp_cg_py",
   		"steps": [
-         "python IntelPython_Numpy_Numba_dpex_kNN.py" 
+         "python cg.py" 
   		 ]
   	}
     ]
