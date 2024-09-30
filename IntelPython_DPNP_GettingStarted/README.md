@@ -55,30 +55,22 @@ Note: if the version is 0.15.0 or more continue, otherwise need to upgrade the d
 
 **4. Clone the GitHub repository**
 <!-- for oneapi-samples: git clone https://github.com/oneapi-src/oneAPI-samples.git
-cd oneAPI-samples/AI-and-Analytics/<samples-folder>/<individual-sample-folder> -->
+cd oneAPI-samples/DirectProgramming/<samples-folder>/<individual-sample-folder> -->
 <!-- for migrated samples - provide git clone command for individual repo and cd to sample dir --> 
 ``` 
 git clone https://github.com/oneapi-src/oneAPI-samples.git
-cd oneAPI-samples/AI-and-Analytics/Getting-Started-Samples/IntelPython_daal4py_GettingStarted
+cd oneAPI-samples/DirectProgramming/Python/DPNP_GettingStarted
 ```
 
-**5. Install dependencies**
-<!-- It is required to have requirement.txt file in sample dir. It should list additional libraries, such as matplotlib, ipykernel etc. -->
->**Note**: Before running the following commands, make sure your Conda/Python environment with AI Tools installed is activated
-
-```
-pip install -r requirements.txt
-pip install notebook
-``` 
-For Jupyter Notebook, refer to [Installing Jupyter](https://jupyter.org/install) for detailed installation instructions.
 
 ## Run the Sample
->**Note**: Before running the sample, make sure [Environment Setup](https://github.com/oneapi-src/oneAPI-samples/tree/master/AI-and-Analytics/Getting-Started-Samples/INC-Quantization-Sample-for-PyTorch#environment-setup) is completed.
+>**Note**: Before running the sample, make sure Intel Python is installed.
 
-Go to the section which corresponds to the installation method chosen in [AI Tools Selector](https://www.intel.com/content/www/us/en/developer/tools/oneapi/ai-tools-selector.html) to see relevant instructions:
-* [AI Tools Offline Installer (Validated)](#ai-tools-offline-installer-validated)
-* [Conda/PIP](#condapip) 
-* [Docker](#docker)
+1. Change to the sample directory.
+2. Build the program.
+   ```
+   $ python cg.py
+   ```
 
 ### AI Tools Offline Installer (Validated)  
 
