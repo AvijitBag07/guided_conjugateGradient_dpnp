@@ -39,26 +39,19 @@ You will need to download and install the following toolkits, tools, and compone
 Required Intel Python package: DPNP (Select Intel® Distribution for Python*: Offline on [Get Intel® Distribution for Python*](https://www.intel.com/content/www/us/en/developer/tools/oneapi/distribution-python-download.html) to install)
 
 
-If you have not already, select and install these Tools via [AI Tools Selector](https://www.intel.com/content/www/us/en/developer/tools/oneapi/ai-tools-selector.html). AI and Analytics samples are validated on AI Tools Offline Installer. It is recommended to select Offline Installer option in AI Tools Selector.
+**2. (Offline Installer) Update the Intel Python base environment**
 
->**Note**: If Docker option is chosen in AI Tools Selector, refer to [Working with Preset Containers](https://github.com/intel/ai-containers/tree/main/preset) to learn how to run the docker and samples.
-
-**2. (Offline Installer) Activate the AI Tools bundle base environment**
-
-If the default path is used during the installation of AI Tools:
+Load python env:
 ```
-source $HOME/intel/oneapi/intelpython/bin/activate
-```
-If a non-default path is used:
-```
-source <custom_path>/bin/activate
+source $PYTHON_INSTALL/env/vars.sh
 ```
  
-**3. (Offline Installer) Activate relevant Conda environment**
-<!-- specify relevant conda environment name in Offline Installer for this sample -->
+**3. (Offline Installer) Check the DPNP version**
+
 ```
-conda activate base
+python -c "import dpnp; print(dpnp.__version__)"
 ``` 
+Note: if the version is 0.15.0 or more continue, otherwise need to upgrade the dpnp version 
 
 **4. Clone the GitHub repository**
 <!-- for oneapi-samples: git clone https://github.com/oneapi-src/oneAPI-samples.git
