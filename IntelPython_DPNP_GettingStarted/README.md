@@ -1,6 +1,6 @@
 # Intel® Python Data Parallel Extension for NumPy Getting Started Sample
 
-The `Intel® Python DPNP Getting Started` sample code shows how to find conjugate Gradient using the Intel Python API powered by the [Intel® Python DPNP - Data Parallel Extension for NumPy (DPNP)](https://github.com/IntelPython/dpnp).
+The `Intel® Python DPNP Getting Started` sample code shows how to find conjugate Gradient using the Intel Python API powered by the [Intel® Python DPNP - Data Parallel Extension for NumPy](https://github.com/IntelPython/dpnp).
 
 | Area                   | Description
 | :---                   | :---
