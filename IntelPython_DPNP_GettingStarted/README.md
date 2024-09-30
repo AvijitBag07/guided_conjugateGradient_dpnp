@@ -1,6 +1,6 @@
-# Intel® Python Daal4py Getting Started Sample
+# Intel® Python Data Parallel Extension for NumPy Getting Started Sample
 
-The `Intel® Python Daal4py Getting Started` sample code shows how to do batch linear regression using the Python API package daal4py powered by the [Intel® oneAPI Data Analytics Library (oneDAL)](https://software.intel.com/content/www/us/en/develop/tools/oneapi/components/onedal.html).
+The `Intel® Python DPNP Getting Started` sample code shows how to find conjugate Gradient using the Intel Python API powered by the [Intel® Python DPNP - Data Parallel Extension for NumPy (DPNP)](https://github.com/IntelPython/dpnp).
 
 | Area                   | Description
 | :---                   | :---
